@@ -290,6 +290,7 @@ if has("gui_running")
     if has("gui_win32") || has("gui_win32s")
         set guifont=Consolas:h12
         set enc=utf-8
+        source $VIMRUNTIME/mswin.vim
     endif
 else
     "dont load csapprox if there is no gui support - silences an annoying warning
