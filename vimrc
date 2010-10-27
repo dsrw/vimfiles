@@ -24,6 +24,9 @@ set number      "add line numbers
 set showbreak=...
 set wrap linebreak nolist
 
+set directory=~/.backup//
+set backupdir=~/.backup//
+
 "mapping for command key to map navigation thru display lines instead
 "of just numbered lines
 vmap <D-j> gj
@@ -275,6 +278,7 @@ if has("gui_running")
         " uncomment to replace the Mac Command-T key to Command-T plugin
         macmenu &File.New\ Tab key=<nop>
         map <D-t> :CommandT<CR>
+        imap <D-t> <ESC>:CommandT<CR>
         " make Mac's Option key behave as the Meta key
         set invmmta
         "try
@@ -396,4 +400,7 @@ nmap <S-Tab> gT
 
 let ScreenShot = {'Icon':0, 'Credits':0, 'force_background':'#FFFFFF'}
 
+map ; :
 
+#save with sudo
+command W w !sudo tee % > /dev/null
