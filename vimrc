@@ -403,5 +403,5 @@ let ScreenShot = {'Icon':0, 'Credits':0, 'force_background':'#FFFFFF'}
 
 map ; :
 
-#save with sudo
+"save with sudo
 command W w !sudo tee % > /dev/null
