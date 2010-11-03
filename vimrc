@@ -289,6 +289,7 @@ if has("gui_running")
         imap <D-t> <ESC>:CommandT<CR>
         " make Mac's Option key behave as the Meta key
         set invmmta
+        set fuopt+=maxhorz
         "try
         "  set transparency=5
         "catch
