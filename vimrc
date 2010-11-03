@@ -109,10 +109,6 @@ set guioptions-=r
 "turn off menu bar
 set guioptions-=m
 
-"turn on a nice wildmenu
-set wildmenu
-set wildmode=list:longest,full
-
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
 
@@ -231,9 +227,9 @@ set foldmethod=indent   "fold based on indent
 set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
-set wildmode=list:longest   "make cmdline tab completion similar to bash
+set wildmode=list:longest,full   "make cmdline tab completion similar to bash
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+"set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 
 "display tabs and trailing spaces
 "set list
