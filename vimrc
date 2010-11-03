@@ -104,6 +104,14 @@ set laststatus=2
 
 "turn off needless toolbar on gvim/mvim
 set guioptions-=T
+"turn off right menu
+set guioptions-=r
+"turn off menu bar
+set guioptions-=m
+
+"turn on a nice wildmenu
+set wildmenu
+set wildmode=list:longest,full
 
 "recalculate the trailing whitespace warning when idle, and after saving
 autocmd cursorhold,bufwritepost * unlet! b:statusline_trailing_space_warning
