@@ -19,6 +19,8 @@ set showmode    "show current mode down the bottom
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
+set ignorecase
+set smartcase
 
 set number      "add line numbers
 set showbreak=...
@@ -318,6 +320,7 @@ nnoremap <leader>b :BufExplorer<cr>
 
 "map to CommandT TextMate style finder
 nnoremap <leader>t :CommandT<CR>
+inoremap <leader>t <ESC>:CommandT<CR>
 
 "map Q to something useful
 noremap Q gq
@@ -410,3 +413,6 @@ map ; :
 
 "save with sudo
 command W w !sudo tee % > /dev/null
+
+"chane leader key
+let mapleader = ","
