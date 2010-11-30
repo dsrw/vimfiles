@@ -273,9 +273,10 @@ if has("gui_running")
     set columns=115
 
     if has("gui_gnome")
-        set term=gnome-256color
+        " set term=gnome-256color
         colorscheme ir_dark
         set guifont=Inconsolata\ Medium\ 12
+        " source $VIMRUNTIME/mswin.vim
     endif
 
     if has("gui_mac") || has("gui_macvim")
